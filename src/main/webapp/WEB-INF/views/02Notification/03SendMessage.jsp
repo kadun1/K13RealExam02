@@ -28,7 +28,7 @@ window.onload = function(){
 	chat_id = document.getElementById('chat_id').value;
 	logWindow = document.getElementById('logWindow');
 	
-	webSocket = new WebSocket('ws://localhost:9999/realexam02/EchoServer.do');
+	webSocket = new WebSocket('ws://localhost:8080/realexam02/EchoServer.do');
 	webSocket.onopen = function(event){
 		wsOpen(event);
 	};
